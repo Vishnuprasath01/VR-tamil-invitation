@@ -146,3 +146,74 @@
     height: 82%;
   }
 }
+
+/* Mobile hero alignment correction */
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.hero .copy {
+  width: 100%;
+  max-width: 560px;
+  margin-inline: auto;
+  padding-inline: 12px;
+  overflow-wrap: anywhere;
+  z-index: 2;
+}
+
+.hero .names {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  line-height: 1.45;
+  font-size: clamp(30px, 8vw, 52px);
+}
+
+.hero .names span {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.2;
+}
+
+.hero .art {
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero .arch {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero .dates {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 110px 16px 48px;
+  }
+
+  .hero .copy {
+    padding: 18px 4px;
+  }
+
+  .hero .names {
+    font-size: clamp(28px, 7.5vw, 42px);
+    overflow-wrap: normal;
+  }
+
+  .hero .art {
+    width: 100%;
+  }
+
+  .hero .arch {
+    width: 82%;
+  }
+}
