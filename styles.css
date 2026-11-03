@@ -836,3 +836,22 @@
         font-size: 12px;
     }
 }
+/* Welcome Screen - Three Line Names */
+.welcome-screen .welcome-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.4;
+    gap: 2px;
+}
+
+.welcome-screen .welcome-names > span {
+    display: block;
+}
+
+.welcome-screen .welcome-names .welcome-amp {
+    color: #b28a39;
+    font-size: 0.75em;
+    line-height: 1.2;
+}
