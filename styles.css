@@ -252,3 +252,137 @@
     gap: 5px;
   }
 }
+
+/* ===== CLEAN ROYAL WEDDING INVITATION ===== */
+
+.hero {
+  min-height: 100svh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 145px 20px 65px;
+  background:
+    radial-gradient(ellipse at 50% 35%, #fffdfb 0%, #fff5f1 55%, #f8e5e1 100%);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero::before,
+.hero::after {
+  display: none;
+}
+
+/* Remove the old overlapping arch */
+.hero .art {
+  display: none;
+}
+
+/* One frame containing all invitation content */
+.hero .copy {
+  width: min(100%, 570px);
+  max-width: 570px;
+  margin: 0 auto;
+  padding: 75px 30px 48px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  border: 1.5px solid #c49a63;
+  border-radius: 280px 280px 12px 12px;
+  background: linear-gradient(180deg, #fffaf7e8, #fbece8d9);
+  box-shadow:
+    inset 0 0 0 7px #ffffff80,
+    0 15px 45px #9b65701a;
+}
+
+.hero .copy > p {
+  max-width: 100%;
+  margin: 14px auto;
+  line-height: 2;
+  overflow-wrap: break-word;
+}
+
+.hero .copy .kicker {
+  color: #a56e70;
+  letter-spacing: 0;
+}
+
+.hero .names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 22px auto;
+  gap: 9px;
+  text-align: center;
+  line-height: 1.3;
+  font-size: clamp(29px, 6vw, 46px);
+  color: #a9516a;
+}
+
+.hero .names .groom-name,
+.hero .names .bride-name {
+  display: block;
+  width: 100%;
+  color: #a9516a;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.hero .names .heart-divider {
+  display: block;
+  margin: 0 auto;
+  color: #c77e8c;
+  font-size: .75em;
+  line-height: 1;
+  text-align: center;
+}
+
+.hero .dates {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 28px auto 0;
+  color: #925a64;
+}
+
+.hero .dates b {
+  font-size: clamp(32px, 7vw, 46px);
+}
+
+.hero .dates small {
+  font-size: 13px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .hero {
+    padding: 145px 16px 45px;
+    min-height: 100svh;
+  }
+
+  .hero .copy {
+    width: 100%;
+    padding: 65px 18px 38px;
+    border-radius: 190px 190px 10px 10px;
+  }
+
+  .hero .copy > p {
+    font-size: 15px;
+    line-height: 2;
+    margin: 13px auto;
+  }
+
+  .hero .names {
+    font-size: clamp(27px, 7.2vw, 38px);
+    gap: 7px;
+    margin: 20px auto;
+  }
+
+  .hero .dates {
+    gap: 9px;
+  }
+}
