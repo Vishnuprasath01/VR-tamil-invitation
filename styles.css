@@ -437,3 +437,23 @@
     filter: drop-shadow(0 0 9px #d99aa4aa);
   }
 }
+
+/* CLEAR ROSE-GOLD NAME HIGHLIGHT */
+
+.hero .names .groom-name,
+.hero .names .bride-name {
+  color: #a34f68 !important;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: #a34f68 !important;
+  font-weight: 700 !important;
+  text-shadow: 0 2px 5px #a34f6830;
+  filter: none !important;
+}
+
+.hero .names .heart-divider {
+  color: #c77e8c !important;
+  -webkit-text-fill-color: #c77e8c !important;
+  text-shadow: 0 2px 8px #d99aa477;
+}
