@@ -742,3 +742,47 @@
         transparent
     );
 }
+/* Premium English Invitation Link */
+.english-invite-link {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    padding: 8px 18px;
+    color: #98646b;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border: 1px solid rgba(190, 151, 91, 0.65);
+    border-radius: 30px;
+    background: rgba(255, 250, 245, 0.55);
+    box-shadow: 0 3px 12px rgba(160, 110, 90, 0.08);
+    transition: all 0.35s ease;
+}
+
+.english-invite-link::before,
+.english-invite-link::after {
+    content: "✧";
+    color: #bd985b;
+    font-size: 12px;
+}
+
+.english-invite-link:hover {
+    color: #b28a39;
+    box-shadow: 0 4px 16px rgba(178, 138, 57, 0.2);
+}
+
+@media (max-width: 600px) {
+    .english-invite-link {
+        top: 28px;
+        font-size: 11px;
+        padding: 7px 14px;
+        letter-spacing: 1px;
+    }
+}
