@@ -386,3 +386,54 @@
     gap: 9px;
   }
 }
+
+/* ROYAL HIGHLIGHT FOR COUPLE NAMES */
+
+.hero .names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.hero .names .groom-name,
+.hero .names .bride-name {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #a34f68;
+  background: linear-gradient(
+    110deg,
+    #92505d,
+    #d08b75,
+    #a34f68,
+    #bd795c
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 2px #b77a7730);
+}
+
+.hero .names .heart-divider {
+  display: block;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #c77e8c;
+  -webkit-text-fill-color: #c77e8c;
+  animation: nameHeartGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes nameHeartGlow {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 2px #d99aa455);
+  }
+  50% {
+    transform: scale(1.12);
+    filter: drop-shadow(0 0 9px #d99aa4aa);
+  }
+}
