@@ -722,3 +722,23 @@
         animation: none;
     }
 }
+.english-invite-link {
+    display: inline-block;
+    width: fit-content;
+    border-bottom: none;
+    position: absolute;
+}
+
+.english-invite-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 5px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #c6a15b,
+        transparent
+    );
+}
