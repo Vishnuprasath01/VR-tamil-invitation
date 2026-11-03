@@ -457,3 +457,185 @@
   -webkit-text-fill-color: #c77e8c !important;
   text-shadow: 0 2px 8px #d99aa477;
 }
+
+/* ===== TAMIL INVITATION - ENGLISH DESIGN STYLE ===== */
+
+.hero {
+  min-height: 100svh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 145px 20px 75px;
+  background:
+    radial-gradient(ellipse at 20% 20%, #fffdfb 0%, transparent 45%),
+    linear-gradient(135deg, #fffaf8, #f9e9e5 65%, #f5dfdc);
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero::before,
+.hero::after {
+  display: none;
+}
+
+.hero .art {
+  display: none;
+}
+
+.hero .copy {
+  width: 100%;
+  max-width: 570px;
+  margin: auto;
+  padding: 20px 12px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  text-align: center;
+}
+
+.hero .copy > p {
+  max-width: 100%;
+  margin: 18px auto;
+  line-height: 2;
+}
+
+.hero .kicker {
+  color: #a77b75;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.hero-tagline {
+  color: #9c7473;
+  font-size: 18px;
+  margin: 25px auto !important;
+}
+
+/* Separate gold frame for names */
+.name-frame {
+  width: min(100%, 440px);
+  margin: 28px auto 32px;
+  padding: 20px 12px;
+  border: 1.5px solid #c7a15d;
+  border-radius: 45% 45% 12px 12px / 13% 13% 12px 12px;
+  background: linear-gradient(145deg, #fffdfa, #fff5f1);
+  box-shadow: 0 8px 28px #b58c4920;
+}
+
+.hero .names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: clamp(32px, 7vw, 52px);
+  line-height: 1.45;
+  text-align: center;
+}
+
+.hero .names .groom-name,
+.hero .names .bride-name {
+  display: block;
+  width: 100%;
+  color: #b28a39 !important;
+  background: none !important;
+  -webkit-text-fill-color: #b28a39 !important;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 2px 5px #b28a3920;
+  overflow-wrap: break-word;
+}
+
+.hero .names .heart-divider {
+  display: block;
+  color: #c98c91 !important;
+  -webkit-text-fill-color: #c98c91 !important;
+  font-size: .8em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.hero-message {
+  max-width: 510px !important;
+  margin: 28px auto !important;
+  font-size: 19px;
+  line-height: 2.1 !important;
+  color: #624c4c;
+}
+
+.hero .dates {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 35px auto;
+}
+
+.hero .dates b {
+  color: #925a64;
+  font-size: 42px;
+}
+
+.hero .dates small {
+  font-size: 13px;
+}
+
+.hero-button {
+  display: inline-block;
+  margin: 18px auto;
+  padding: 13px 28px;
+  border: 1px solid #c9a39a;
+  color: #925a64;
+  text-decoration: none;
+  font-size: 16px;
+  background: #fffaf780;
+  transition: .3s ease;
+}
+
+.hero-button:hover {
+  background: #925a64;
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero {
+    padding: 130px 18px 55px;
+  }
+
+  .hero .copy {
+    padding: 15px 0;
+  }
+
+  .hero-tagline {
+    font-size: 16px;
+  }
+
+  .name-frame {
+    width: 100%;
+    max-width: 390px;
+    padding: 18px 10px;
+    margin: 25px auto;
+  }
+
+  .hero .names {
+    font-size: clamp(29px, 8vw, 40px);
+  }
+
+  .hero-message {
+    font-size: 16px;
+    line-height: 2 !important;
+  }
+
+  .hero .dates {
+    gap: 10px;
+  }
+
+  .hero .dates b {
+    font-size: 36px;
+  }
+}
