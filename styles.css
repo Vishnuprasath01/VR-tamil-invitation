@@ -639,3 +639,86 @@
     font-size: 36px;
   }
 }
+/* ===== Elegant Wedding Welcome Enhancements ===== */
+
+/* English Invitation - Top Right */
+.english-invite-link {
+    position: absolute;
+    top: 28px;
+    right: 24px;
+    z-index: 10;
+    color: #98646b;
+    font-size: 13px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #c6a15b;
+    padding-bottom: 5px;
+    animation: englishFade 1.5s ease both;
+    transition: all 0.4s ease;
+}
+
+.english-invite-link:hover {
+    color: #b28a39;
+    text-shadow: 0 0 8px #d8b76b;
+}
+
+/* Centre Flower - Slow Rotation */
+.flower {
+    animation: flowerRotate 18s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes flowerRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Gold Border - Soft Light Sweep */
+.welcome-screen {
+    overflow: hidden;
+}
+
+.welcome-screen::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 45%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255, 255, 255, 0.35),
+        transparent
+    );
+    animation: goldLightSweep 12s ease-in-out infinite;
+}
+
+@keyframes goldLightSweep {
+    0%, 65% { left: -100%; }
+    100% { left: 150%; }
+}
+
+@keyframes englishFade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Mobile Adjustment */
+@media (max-width: 600px) {
+    .english-invite-link {
+        top: 24px;
+        right: 20px;
+        font-size: 12px;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .flower,
+    .welcome-screen::after,
+    .english-invite-link {
+        animation: none;
+    }
+}
